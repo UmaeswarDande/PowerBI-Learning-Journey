@@ -20,7 +20,7 @@ Bar Chart: Products on Y-axis, Sales on X-axis
 Learned how to drag fields into Axis & Values
 
 📸 Screenshot:
-
+![Day 1 Output](../images/Day1_Output.png)
 
 📝 Key Takeaways
 

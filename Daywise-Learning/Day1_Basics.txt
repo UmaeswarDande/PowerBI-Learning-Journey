@@ -1,0 +1,15 @@
+# Day 1 – Power BI Setup & First Report 🚀
+------------------------------------------
+
+## What I Did
+- Installed Power BI Desktop & Git
+- Created GitHub repo for my learning journey
+- Built my first Power BI report using Excel data (Product vs Sales)
+
+## Output
+- Simple bar chart showing Product-wise Sales
+
+##Files in Repo
+- datasets/Day1_SalesData.xlsx
+- Daywise-Learning/Day1_FirstReport.pbix
+- Daywise-Learning/Day1_Basics.md

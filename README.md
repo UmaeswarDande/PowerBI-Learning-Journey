@@ -31,6 +31,7 @@ Connected to a CSV dataset
 Built first bar chart (Product vs Sales)
 
 📄 Notes
+ 📄 [Notes – Day 1](Daywise-Learning/Day1_Basics.md)
 
 📊
 

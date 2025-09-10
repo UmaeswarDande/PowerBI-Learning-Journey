@@ -1,0 +1,10 @@
+OrderID,OrderDate,Customer,Region,Sales,Profit
+101,2025-01-01,John Smith,North,100,30
+102,2025-01-02,Jane Doe,South,150,40
+103,2025-01-03,,East,200,50
+104,2025-01-03,John Smith,North,200,50
+105,2025-01-04,Chris Evans,West,300,
+106,2025-01-03,John Smith,North,200,50
+107,2025-01-05,"Anna-Marie O'Neil",South,250,60
+108,01/06/2025," Bob  Brown ",East,180,20
+109,2025-01-01,John Smith,North,100,30

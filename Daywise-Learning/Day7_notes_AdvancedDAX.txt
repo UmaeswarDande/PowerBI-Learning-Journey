@@ -1,0 +1,31 @@
+# Day 7 – Advanced DAX: Sales Performance Dashboard
+
+## Overview
+This repository contains the Power BI workbook and documentation for Day 7 of the Power BI course: Advanced DAX and Sales Performance Dashboard (MTD, QTD, YTD & Growth analysis).
+
+## Files & Structure
+- `pbix/Day7_AdvancedDAX.pbix` — final Power BI Desktop file
+- `docs/Day1_notes.md` … `docs/Day7_notes.md` — daily notes and steps
+- `dax/measures.md` — DAX measures (Total Sales, MTD, QTD, YTD, Previous Month Sales, Growth %)
+- `images/` — screenshots of the dashboard and important steps (relationships, queries)
+- `.gitignore` — ignored files
+- `LICENSE` — license (optional)
+
+## How to open
+1. Download `Day7_AdvancedDAX.pbix` from `pbix/`.
+2. Open with Power BI Desktop (latest version recommended).
+3. Check `DimDate` table is marked as *Date table* and relationships are active: FactSales(OrderDate) -> DimDate(Date).
+4. If measures show blank, ensure the `Date` column in `DimDate` is of type Date and the relationship is active.
+
+## DAX measures (summary)
+See `dax/measures.md` for full formulas:
+- `Total Sales = SUM(FactSales[Sales])`
+- `MTD Sales = CALCULATE([Total Sales], DATESMTD(DimDate[Date]))`
+- `QTD Sales = CALCULATE([Total Sales], DATESQTD(DimDate[Date]))`
+- `YTD Sales = CALCULATE([Total Sales], DATESYTD(DimDate[Date]))`
+- `Previous Month Sales = CALCULATE([Total Sales], PREVIOUSMONTH(DimDate[Date]))`
+- `Sales Growth % = DIVIDE([Total Sales]-[Previous Month Sales], [Previous Month Sales])`
+
+## Notes & troubleshooting
+- If KPIs are blank, check: relationship to `DimDate`, `DimDate[Date]` data type, date table marked as Date Table, and filter directions.
+- For large `.pbix` file (> 50 MB), consider using Git LFS or uploading PBIX as a GitHub Release asset.
